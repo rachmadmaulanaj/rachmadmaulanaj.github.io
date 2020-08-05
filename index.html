@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Portofolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <style>
+        /* FONT CUSTOM */
+        @font-face {
+            font-family: corbel;
+            src: url(assets/font/corbel.ttf);
+
+            font-family: bubblegum;
+            src: url(assets/font/BubblegumSans-Regular.ttf);
+        }
+        .font-custom1{
+            font-family: 'corbel';
+            font-variant: inherit;
+        }
+        .font-custom2{
+            font-family: 'bubblegum';
+            font-variant: inherit;
+        }
+
+        /* HEADER */
+        .header-text {
+            margin-top: 25vh;   /* Posisikan teks di tengah slider */
+        }
+        .header-background1 {
+            background-color: rgb(240, 240, 240);
+            height: 400px;
+        }
+        .header-background2 {
+            background-color: rgb(230, 230, 230);
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top shadow">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item active mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1 active" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1" href="#">About Me</a>
+                </li>
+                <li class="nav-item mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1" href="#">My Skill</a>
+                </li>
+                <li class="nav-item mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1" href="#">Portofolio</a>
+                </li>
+                <li class="nav-item mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="mt-5" id="header">
+        <div class="row m-0">
+            <div class="col-md-6 header-background1">
+                <div class="header-text ml-md-4 ml-lg-5">
+                    <p class="lead font-custom1">Hello! I am</p>
+                    <h2 class="h2 font-custom2">Rachmad Maulana Julianto</h2>
+                    <p class="lead font-custom1">I'm a Designer & Web Developer</p>
+                </div>
+            </div>
+            <div class="col-md-6 header-background2">
+                <img src="assets/img/profil.jpg">
+            </div>
+        </div>
+    </section>
+        
+    <script src="assets/jquery/jquery.js"></script>
+    <script src="assets/popper/popper.js"></script>
+    <script src="assets/bootstrap/bootstrap.js"></script>
+</body>
+</html>
