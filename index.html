@@ -6,6 +6,10 @@
     <title>Welcome to my Portofolio</title>
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
     <style>
+        /* SMOOT SCROOL */
+        html {
+            scroll-behavior: smooth;
+        }
         /* FONT CUSTOM */
         @font-face {
             font-family: corbel;
@@ -35,38 +39,40 @@
             background-color: rgb(230, 230, 230);
             height: 400px;
         }
+        .padding-aboutme {
+            padding: 5rem 3rem 3rem 3rem;
+        }
     </style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top shadow">
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active mx-md-4 mx-sm-3">
-                    <a class="nav-link font-custom1 active" href="#">Home</a>
+                <li class="nav-item mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1" href="#header">Home</a>
                 </li>
                 <li class="nav-item mx-md-4 mx-sm-3">
-                    <a class="nav-link font-custom1" href="#">About Me</a>
+                    <a class="nav-link font-custom1" href="#aboutme">About Me</a>
                 </li>
                 <li class="nav-item mx-md-4 mx-sm-3">
-                    <a class="nav-link font-custom1" href="#">My Skill</a>
+                    <a class="nav-link font-custom1" href="#myskill">My Skill</a>
                 </li>
                 <li class="nav-item mx-md-4 mx-sm-3">
-                    <a class="nav-link font-custom1" href="#">Portofolio</a>
+                    <a class="nav-link font-custom1" href="#portofolio">Portofolio</a>
                 </li>
                 <li class="nav-item mx-md-4 mx-sm-3">
-                    <a class="nav-link font-custom1" href="#">Contact</a>
+                    <a class="nav-link font-custom1" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- HEADER -->
-    <section class="mt-5" id="header">
+    <section class="pt-5" id="header">
         <div class="row m-0">
             <div class="col-md-6 header-background1">
                 <div class="header-text ml-md-4 ml-lg-5">
@@ -77,6 +83,38 @@
             </div>
             <div class="col-md-6 header-background2">
                 <img src="assets/img/profil.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="padding-aboutme" id="aboutme">
+        <h3 class="font-custom2">About Me</h3>
+        <hr class="m-0" style="width: 10%;">
+        <div class="row mx-0 my-5">
+            <div class="col-md-3 text-center">
+                <img src="assets/img/profil.jpg" class="img-thumbnail rounded-circle w-100">
+            </div>
+            <div class="col-md-9">
+                <p class="font-custom1 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae, velit fugiat magni neque consectetur incidunt perspiciatis cum et sapiente eaque doloremque sequi. Vero et blanditiis velit dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae, velit fugiat magni neque consectetur incidunt perspiciatis cum et sapiente eaque doloremque sequi. Vero et blanditiis velit dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae, velit fugiat magni neque consectetur incidunt perspiciatis cum et sapiente eaque doloremque sequi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY SKILL -->
+    <section class="bg-light p-5" id="myskill" style="height: 500px;">
+        <h3 class="font-custom2">My Skill</h3>
+        <hr class="m-0" style="width: 10%;">
+        <div class="row mx- my-3">
+            <div class="col">
+                <div class="progress mt-3" style="height: 10px">
+                    <div class="progress-bar" style="width: 25%"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="progress mt-3" style="height: 10px">
+                    <div class="progress-bar" style="width: 25%"></div>
+                </div>
             </div>
         </div>
     </section>
