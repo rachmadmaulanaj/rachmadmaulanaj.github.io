@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my Portofolio</title>
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
     <style>
         /* SMOOT SCROOL */
         html {
@@ -29,18 +30,32 @@
 
         /* HEADER */
         .header-text {
-            margin-top: 25vh;   /* Posisikan teks di tengah slider */
+            margin-top: 25vh;
+            padding-left: 10%;
         }
         .header-background1 {
             background-color: rgb(240, 240, 240);
-            height: 400px;
+            height: 450px;
         }
         .header-background2 {
             background-color: rgb(230, 230, 230);
-            height: 400px;
+            height: 450px;
+        }
+        .kotak {
+            width: 80%;
+            background-color: white;
+            top: 450px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
         }
         .padding-aboutme {
             padding: 5rem 3rem 3rem 3rem;
+        }
+        .nav-link.active {
+            color: #dc3545!important;
         }
     </style>
 </head>
@@ -74,23 +89,46 @@
     <!-- HEADER -->
     <section class="pt-5" id="header">
         <div class="row m-0">
-            <div class="col-md-6 header-background1">
-                <div class="header-text ml-md-4 ml-lg-5">
-                    <p class="lead font-custom1">Hello! I am</p>
-                    <h2 class="h2 font-custom2">Rachmad Maulana Julianto</h2>
-                    <p class="lead font-custom1">I'm a Designer & Web Developer</p>
-                </div>
+            <div class="col-md-6 header-background1 text-center pt-5">
+                <img src="assets/img/tes.png" height="110%">
             </div>
             <div class="col-md-6 header-background2">
-                <img src="assets/img/profil.jpg">
+                <div class="header-text ml-md-4 ml-lg-5">
+                    <p class="h4 font-custom1 mb-1"><b>Hello! I am</b></p>
+                    <h1 class="h1 font-custom2 mb-1 text-danger">Rachmad Maulana Julianto</h1>
+                    <p class="h5 font-custom1">I'm a Designer & Web Developer</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <div class="kotak shadow">
+        <div class="container">
+            <div class="row p-2 mx-5">
+                <div class="col-md-3 text-center">
+                    <i class="fa fa-globe fa-3x p-2 text-danger"></i>
+                    <h5 class="font-custom1">Indonesia</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fa fa-building fa-3x p-2 text-danger"></i>
+                    <h5 class="font-custom1">Surabaya</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fa fa-calendar-plus-o fa-3x p-2 text-danger"></i>
+                    <h5 class="font-custom1">24+</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fa fa-graduation-cap fa-3x p-2 text-danger"></i>
+                    <h5 class="font-custom1">S1 Informatics Engineering</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ABOUT ME -->
-    <section class="padding-aboutme" id="aboutme">
-        <h3 class="font-custom2">About Me</h3>
-        <hr class="m-0" style="width: 10%;">
+    <section class="padding-aboutme mt-3" id="aboutme">
+        <h3 class="font-custom2 text-danger">About Me</h3>
+        <hr class="m-0" style="width: 10%; border-top: 3px solid rgba(0, 0, 0, 0.1);">
         <div class="row mx-0 my-5">
             <div class="col-md-3 text-center">
                 <img src="assets/img/profil.jpg" class="img-thumbnail rounded-circle w-100">
