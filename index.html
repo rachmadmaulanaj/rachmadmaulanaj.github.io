@@ -9,99 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/aos/aos.css">
     <link rel="stylesheet" type="text/css" href="assets/slick-master/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick-master/slick/slick-theme.css">
-    <style>
-        /* SMOOT SCROOL */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* FONT CUSTOM */
-        @font-face {
-            font-family: corbel;
-            src: url(assets/font/corbel.ttf);
-
-            font-family: bubblegum;
-            src: url(assets/font/BubblegumSans-Regular.ttf);
-        }
-        .font-custom1{
-            font-family: 'corbel';
-            font-variant: inherit;
-        }
-        .font-custom2{
-            font-family: 'bubblegum';
-            font-variant: inherit;
-        }
-
-        /* HEADER */
-        .header-text {
-            margin-top: 25vh;
-            padding-left: 10%;
-        }
-        .header-background1 {
-            background-color: rgb(240, 240, 240);
-            height: 450px;
-        }
-        .header-background2 {
-            background-color: rgb(230, 230, 230);
-            height: 450px;
-        }
-        .kotak {
-            width: 80%;
-            background-color: white;
-            top: 450px;
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            position: absolute;
-        }
-        .padding-section {
-            padding: 5rem 3rem 3rem 3rem;
-        }
-        .nav-link.active {
-            color: #dc3545!important;
-        }
-        .card-custom {
-            width: 90%;
-            background-color: white;
-            border-left: 5px solid #dc3545;
-        }
-        .card-custom-header {
-            position: absolute;
-            background-color: #dc3545;
-            padding: 5px 30px;
-            top: -10%;
-            left: 30%;
-            right: 30%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .slider {
-            width: 100%;
-            margin: 0px auto;
-        }
-        .slick-slide {
-            margin: 0px 20px;
-        }
-        .slick-slide img {
-            width: 100%;
-        }
-        .slick-prev:before,
-        .slick-next:before {
-            color: black;
-        }
-        .slick-slide {
-            transition: all ease-in-out .3s;
-            opacity: .2;
-        }
-        .slick-active {
-            opacity: .5;
-        }
-        .slick-current {
-            opacity: 1;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/custom/css/style.css">
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="100">
     <!-- NAVBAR -->
@@ -118,7 +26,10 @@
                     <a class="nav-link font-custom1" href="#aboutme">About Me</a>
                 </li>
                 <li class="nav-item mx-md-4 mx-sm-3">
-                    <a class="nav-link font-custom1" href="#myskill">My Skill</a>
+                    <a class="nav-link font-custom1" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item mx-md-4 mx-sm-3">
+                    <a class="nav-link font-custom1" href="#skill">Skill</a>
                 </li>
                 <li class="nav-item mx-md-4 mx-sm-3">
                     <a class="nav-link font-custom1" href="#portofolio">Portofolio</a>
@@ -191,15 +102,179 @@
         </div>
     </section>
 
+    <!-- MY EXPERIENCE-->
+    <section class="bg-light padding-section mt-5" id="experience">
+        <h3 class="font-custom2">Experience</h3>
+        <hr class="m-0 bg-danger" style="width: 10%; border-top: 3px solid rgba(0, 0, 0, 0.1);">
+        <!-- EDUCATION -->
+        <div class="row mx-0 my-3 justify-content-center">
+            <div class="col-10 col-md-4 col-lg-3 mt-3">
+                <div class="card-custom2 shadow h-100">
+                    <div class="card-body">
+                        <div class="font-custom1" style="margin-top: 80px;">
+                            <table class="table table-sm">
+                                <tr>
+                                    <td style="border: none;"><i class="fa fa-university"></i></td>
+                                    <td style="border: none;"><h5><b>SMP</b></h5></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><i class="fa fa-thumb-tack" style="transform: rotate(45deg);"></i></td>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><h6>SMP Negeri 10 Surabaya</h6></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-custom-header2">
+                    <h4 class="font-custom2 mt-3 text-center text-white">2008 - 2011</h4>
+                </div>
+                <div class="card-custom-header2-bottom"></div>
+            </div>
+            <div class="col-10 col-md-4 col-lg-3 mt-3">
+                <div class="card-custom2 shadow h-100">
+                    <div class="card-body">
+                        <div class="font-custom1" style="margin-top: 80px;">
+                            <table class="table table-sm">
+                                <tr>
+                                    <td style="border: none;"><i class="fa fa-university"></i></td>
+                                    <td style="border: none;"><h5><b>SMK</b></h5></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-thumb-tack" style="transform: rotate(45deg);"></i></td>
+                                    <td><h6>SMK Negeri 11 Surabaya</h6></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><i class="fa fa-certificate"></i></td>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><h6>Animasi</h6></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-custom-header2">
+                    <h4 class="font-custom2 mt-3 text-center text-white">2011 - 2014</h4>
+                </div>
+                <div class="card-custom-header2-bottom"></div>
+            </div>
+            <div class="col-10 col-md-4 col-lg-3 mt-3">
+                <div class="card-custom2 shadow h-100">
+                    <div class="card-body">
+                        <div class="font-custom1" style="margin-top: 80px;">
+                            <table class="table table-sm">
+                                <tr>
+                                    <td style="border: none;"><i class="fa fa-university"></i></td>
+                                    <td style="border: none;"><h5><b>Perguruan Tinggi</b></h5></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-thumb-tack" style="transform: rotate(45deg);"></i></td>
+                                    <td><h6>Universitas 17 Agustus 1945 Surabaya</h6></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><i class="fa fa-certificate"></i></td>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><h6>Teknik Informatika</h6></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-custom-header2">
+                    <h4 class="font-custom2 mt-3 text-center text-white">2016 - 2020</h4>
+                </div>
+                <div class="card-custom-header2-bottom"></div>
+            </div>
+        </div>
+        <!-- WORK EXPERIENCE -->
+        <div class="row mx-0 my-3 justify-content-center">
+            <div class="col-10 col-md-4 col-lg-3 mt-3">
+                <div class="card-custom2 shadow h-100">
+                    <div class="card-body">
+                        <div class="font-custom1" style="margin-top: 80px;">
+                            <table class="table table-sm">
+                                <tr>
+                                    <td style="border: none;"><i class="fa fa-building"></i></td>
+                                    <td style="border: none;"><h5><b>Paperku</b></h5></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-clock-o"></i></td>
+                                    <td><h6>Fulltime</h6></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><i class="fa fa-briefcase"></i></td>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><h6>Design</h6></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-custom-header2">
+                    <h4 class="font-custom2 mt-3 text-center text-white">2016 - 2018</h4>
+                </div>
+                <div class="card-custom-header2-bottom"></div>
+            </div>
+            <div class="col-10 col-md-4 col-lg-3 mt-3">
+                <div class="card-custom2 shadow h-100">
+                    <div class="card-body">
+                        <div class="font-custom1" style="margin-top: 80px;">
+                            <table class="table table-sm">
+                                <tr>
+                                    <td style="border: none;"><i class="fa fa-building"></i></td>
+                                    <td style="border: none;"><h5><b>PT. Laprint</b></h5></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-clock-o"></i></td>
+                                    <td><h6>Partime</h6></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><i class="fa fa-briefcase"></i></td>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><h6>Design</h6></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-custom-header2">
+                    <h4 class="font-custom2 mt-3 text-center text-white">2019 - 2019</h4>
+                </div>
+                <div class="card-custom-header2-bottom"></div>
+            </div>
+            <div class="col-10 col-md-4 col-lg-3 mt-3">
+                <div class="card-custom2 shadow h-100">
+                    <div class="card-body">
+                        <div class="font-custom1" style="margin-top: 80px;">
+                            <table class="table table-sm">
+                                <tr>
+                                    <td style="border: none;"><i class="fa fa-building"></i></td>
+                                    <td style="border: none;"><h5><b>CV. Dharma Eka Maheswara</b></h5></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-clock-o"></i></td>
+                                    <td><h6>Fulltime</h6></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><i class="fa fa-briefcase"></i></td>
+                                    <td style="border-bottom: 1px solid #dee2e6;"><h6>Design</h6></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-custom-header2">
+                    <h4 class="font-custom2 mt-3 text-center text-white">2019 - 2020</h4>
+                </div>
+                <div class="card-custom-header2-bottom"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- MY SKILL -->
-    <section class="bg-light mt-5 padding-section" id="myskill">
-        <h3 class="font-custom2">My Skill</h3>
+    <section class="mt-5 padding-section" id="skill">
+        <h3 class="font-custom2">Skill</h3>
         <hr class="m-0 bg-danger" style="width: 10%; border-top: 3px solid rgba(0, 0, 0, 0.1);">
         <div class="row mt-5">
-            <div class="col-md-6 p-3 mt-3">
+            <div class="col-md-6 p-5 mt-3">
                 <div class="card shadow" style="border: none;">
                     <div class="card-custom-header">
-                        <h2 class="font-custom2 mt-3 text-center text-white">Design</h2>
+                        <h4 class="font-custom2 mt-3 text-center text-white">Design</h4>
                     </div>
                     <div class="card-body my-4">
                         <div class="col p-3">
@@ -226,10 +301,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 p-3 mt-3">
+            <div class="col-md-6 p-5 mt-3">
                 <div class="card shadow" style="border: none;">
                     <div class="card-custom-header">
-                        <h2 class="font-custom2 mt-3 text-center text-white">Programming</h2>
+                        <h4 class="font-custom2 mt-3 text-center text-white">Programming</h4>
                     </div>
                     <div class="card-body my-4">
                         <div class="col p-3">
@@ -260,7 +335,7 @@
     </section>
     
     <!-- PORTOFOLIO -->
-    <section class="padding-section" id="portofolio" style="height: 600px;">
+    <section class="bg-light padding-section" id="portofolio" style="height: 600px;">
         <h3 class="font-custom2">Portofolio</h3>
         <hr class="m-0 bg-danger" style="width: 10%; border-top: 3px solid rgba(0, 0, 0, 0.1);">
         <div class="container center slider pt-5">
