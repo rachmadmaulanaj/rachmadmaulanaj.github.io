@@ -55,13 +55,33 @@ html {
 }
 .card-custom-header {
     position: absolute;
+    z-index: 2;
     background-color: #dc3545;
     padding: 5px 30px;
-    top: -10%;
+    top: 5%;
     left: 30%;
     right: 30%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5) !important;
+}
+.card-custom-header-left{
+    position: absolute;
+    top: 5%;
+    left: 19%;
+    border-right:35px solid #9b1623;
+    border-bottom:35px solid #9b1623;
+    border-top:35px solid transparent;
+    border-left:35px solid transparent;
+}
+.card-custom-header-right{
+    position: absolute;
+    top: 5%;
+    right: 19%;
+    border-left:35px solid #9b1623;
+    border-bottom:35px solid #9b1623;
+    border-top:35px solid transparent;
+    border-right:35px solid transparent;
 }
 .card-custom2 {
     position: relative;
@@ -115,4 +135,8 @@ html {
 }
 .slick-current {
     opacity: 1;
+}
+
+a:hover {
+    color: #dc3545;
 }
