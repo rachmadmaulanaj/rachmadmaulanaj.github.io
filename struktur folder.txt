@@ -1,0 +1,39 @@
+my-portfolio/
+├─ public/                  # File statis yang diakses langsung
+│  ├─ favicon.ico
+│  └─ assets/               # Asset statis (gambar/logo) yang tidak di-bundling
+│
+├─ src/
+│  ├─ assets/               # Gambar, font, ikon yang di-import di React
+│  │  ├─ images/
+│  │  └─ icons/
+│  │
+│  ├─ components/           # Komponen kecil/umum (Navbar, Footer, Button, dsb)
+│  │  ├─ common/            # Reusable UI seperti Button, Card
+│  │  └─ layout/            # Layout utama (Header, Footer, Sidebar)
+│  │
+│  ├─ pages/                # Halaman utama (Home, About, Contact)
+│  │  ├─ Home/
+│  │  │  ├─ Home.jsx
+│  │  │  └─ Home.css
+│  │  └─ About/
+│  │     ├─ About.jsx
+│  │     └─ About.css
+│  │
+│  ├─ hooks/                # Custom React hooks
+│  │  └─ useTheme.js
+│  │
+│  ├─ utils/                # Helper function (formatDate, scrollToTop)
+│  │
+│  ├─ styles/               # Style global (CSS/SASS)
+│  │  └─ global.css
+│  │
+│  ├─ App.jsx               # Root component
+│  ├─ main.jsx              # Entry point Vite + React
+│  └─ router.jsx            # (Opsional) Routing dengan react-router-dom
+│
+├─ .gitignore
+├─ index.html
+├─ package.json
+├─ vite.config.js
+└─ README.md

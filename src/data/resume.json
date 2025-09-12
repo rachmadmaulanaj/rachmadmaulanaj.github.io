@@ -1,0 +1,177 @@
+{
+    "personal_info": {
+        "short_name": "Rachmad",
+        "full_name": "Rachmad Maulana Julianto",
+        "email": "rachmadmaulanaaa@gmailcom",
+        "phone": "+62 851 5756 1788",
+        "birth_date": "1996-07-27",
+        "address": "Jl. Simowau Indah Blok G No. 6 Sepanjang, Sidoarjo, Jawa Timur, Indonesia",
+        "longitude": 112.7082243,
+        "latitude": -7.3380981
+    },
+    "title": [
+        "Web Programmer",
+        "Software Engineer"
+    ],
+    "about_me": "Halo, saya Rachmad Maulana, seorang web programmer fullstack dengan pengalaman lebih dari 5 tahun dalam membangun aplikasi berbasis web. Saya berfokus pada frontend maupun backend development, dengan bahasa pemrograman utama PHP dan JavaScript, serta framework seperti CodeIgniter, Laravel, SilverStripe, dan React JS. Untuk manajemen data, saya terbiasa menggunakan MySQL, PostgreSQL, dan SQL Server.\n\nSelama lebih dari 5 tahun berkarier, saya telah mengerjakan berbagai proyek berbasis web, mulai dari aplikasi pengiriman barang darat dan laut dengan fitur lelang yang mempermudah proses penawaran harga, sistem penjualan tiket kapal laut dengan integrasi pembayaran digital, hingga aplikasi ERP internal perusahaan yang membantu mengelola inventori, keuangan, dan laporan operasional secara lebih efisien.",
+    "what_im_doing": [
+        {
+            "title": "Web Development",
+            "description": "Update and maintain the internal company web application",
+            "icon": "FaCode"
+        },
+        {
+            "title": "Web Design",
+            "description": "Update and maintain the internal company web application",
+            "icon": "FaPaintbrush"
+        },
+        {
+            "title": "Mobile Development",
+            "description": "Update and maintain the internal company web application",
+            "icon": "FaMobileScreenButton"
+        },
+        {
+            "title": "Data Analysis",
+            "description": "Update and maintain the internal company web application",
+            "icon": "FaChartLine"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Update and maintain the internal company web application",
+            "icon": "FaObjectGroup"
+        },
+        {
+            "title": "QC Testing",
+            "description": "Update and maintain the internal company web application",
+            "icon": "FaGear"
+        }
+    ],
+    "social_media": [
+        {
+            "name": "github",
+            "link": "https://github.com/rachmadmaulanaj",
+            "icon": "SiGithub"
+        },
+        {
+            "name": "instagram",
+            "link": "https://instagram.com/rachmadmaulanaj",
+            "icon": "SiInstagram"
+        },
+        {
+            "name": "linkedin",
+            "link": "https://linkedin.com/in/rachmadmaulanaj",
+            "icon": "SiLinkedin"
+        },
+        {
+            "name": "facebook",
+            "link": "https://facebook.com/RachmadMaulanaJulianto",
+            "icon": "SiFacebook"
+        }
+    ],
+    "work_experience": [
+        {
+            "organization": "PT Kreator Solusi Informasi",
+            "role": "Web Programmer",
+            "description": "Update and maintain the internal company web application",
+            "start_date": "2023-01-01",
+            "end_date": "Present"
+        },
+        {
+            "organization": "Morning Glory Enterprise",
+            "role": "Web Programmer",
+            "description": "Update and maintain the internal company web application",
+            "start_date": "2021-01-01",
+            "end_date": "2023-12-31"
+        }
+    ],
+    "education": [
+        {
+            "organization": "Universitas 17 Agustus 1945 Surabaya",
+            "role": "Sarjana Teknik",
+            "description": "Teknik Informatika",
+            "start_date": "2016-09-01",
+            "end_date": "2020-06-30"
+        },
+        {
+            "organization": "SMK Negeri 12 Surabaya",
+            "role": "SMK",
+            "description": "Animasi",
+            "start_date": "2011-09-01",
+            "end_date": "2014-06-30"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "value": 80
+        },
+        {
+            "name": "CSS",
+            "value": 90
+        },
+        {
+            "name": "Php",
+            "value": 75
+        },
+        {
+            "name": "Javascript",
+            "value": 95
+        }
+    ],
+    "portofolio": [
+        {
+            "name": "Movie Gue",
+            "description": "Aplikasi pencarian film internasional",
+            "category": "frontend",
+            "stack": [
+                "Php",
+                "React",
+                "Javascript"
+            ],
+            "link": "https://rachmadmaulanaj.github.io/moviegue-app/",
+            "thumbnail": "assets/images/portofolio/moviegue.gif",
+            "screenshots": [
+                "assets/images/portofolio/moviegue1.png",
+                "assets/images/portofolio/moviegue2.png",
+                "assets/images/portofolio/moviegue3.png",
+                "assets/images/portofolio/moviegue4.png",
+                "assets/images/portofolio/moviegue5.png"
+            ]
+        },
+        {
+            "name": "Cuaca Sekitar",
+            "description": "Aplikasi peramalan cuaca",
+            "category": "frontend",
+            "stack": [
+                "Tailwindcss",
+                "Vite",
+                "Javascript",
+                "Laravel",
+                "React"
+            ],
+            "link": "https://rachmadmaulanaj.github.io/cuacasekitar-app/",
+            "thumbnail": "assets/images/portofolio/cuacasekitar.gif",
+            "screenshots": [
+                "assets/images/portofolio/cuacasekitar1.png",
+                "assets/images/portofolio/cuacasekitar2.png",
+                "assets/images/portofolio/cuacasekitar3.png"
+            ]
+        },
+        {
+            "name": "Group Chat",
+            "description": "Aplikasi chat grup realtime",
+            "category": "backend",
+            "stack": [
+                "Javascript",
+                "Laravel"
+            ],
+            "link": "https://rachmadmaulanaj.github.io/groupchat-app/",
+            "thumbnail": "assets/images/portofolio/groupchat.gif",
+            "screenshots": [
+                "assets/images/portofolio/groupchat1.png",
+                "assets/images/portofolio/groupchat2.png",
+                "assets/images/portofolio/groupchat3.png"
+            ]
+        }
+    ]
+}
