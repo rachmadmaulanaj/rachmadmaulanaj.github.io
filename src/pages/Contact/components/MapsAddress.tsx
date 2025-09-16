@@ -1,5 +1,6 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Tooltip } from "react-leaflet";
+import L from "leaflet";
 import { useTheme } from "@/components/common/theme-provider";
 
 import type { PersonalInfo } from "@/types/resume";
@@ -7,6 +8,21 @@ import type { PersonalInfo } from "@/types/resume";
 interface MapsAddressProps {
     data: PersonalInfo;
 }
+
+// Fix default icon path
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+const DefaultIcon = L.icon({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapsAddress: React.FC<MapsAddressProps> = ({ data }) => {
     const { theme } = useTheme()

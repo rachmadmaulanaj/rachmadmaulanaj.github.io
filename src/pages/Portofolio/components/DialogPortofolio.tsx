@@ -85,7 +85,7 @@ const DialogPortofolio: React.FC<DialogPortofolioProps> = ({ data }) => {
                                     <div className="col-span-4 md:col-span-3 break-words">{data.description}</div>
                                     <div className="col-span-4 md:col-span-1 font-bold">Link :</div>
                                     <div className="col-span-4 md:col-span-3">
-                                        <a href={data.link} className="text-blue-500 hover:underline break-words">{data.link}</a>
+                                        <a href={data.link} className="text-blue-500 hover:underline break-words" target="_blank">{data.link}</a>
                                     </div>
                                     <div className="col-span-4 font-bold">Stack :</div>
                                 </div>

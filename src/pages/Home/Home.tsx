@@ -14,7 +14,7 @@ const Home: React.FC<HomeProps> = ({ data }) => {
     const intro = data.title.flatMap((value) => [`I'm ${full_name}, A ${value}`, 1000]);
     
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-full xl:h-[calc(100vh-160px)]">
             <div className="col-span-1 order-2 md:order-1">
                 <div className="flex flex-col items-center justify-center w-full h-full">
                     <TypeAnimation
@@ -38,8 +38,8 @@ const Home: React.FC<HomeProps> = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 order-1 md:order-2">
-                <img src="assets/images/personal/half-body.png" alt="half-body" />
+            <div className="col-span-1 order-1 md:order-2 mx-auto">
+                <img src="assets/images/personal/half-body.png" alt="half-body" className="h-full w-auto object-contain" />
             </div>
         </div>
     )
