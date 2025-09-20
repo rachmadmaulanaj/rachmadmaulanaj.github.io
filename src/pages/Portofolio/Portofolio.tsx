@@ -1,7 +1,6 @@
 import React from "react";
 import { capitalize } from "@/utils/helpers";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import type { ResumeData } from "@/types/resume";
