@@ -19,7 +19,7 @@ const DefaultIcon = L.icon({
   iconRetinaUrl: markerIcon2x,
   shadowUrl: markerShadow,
   iconSize: [25, 41],
-  iconAnchor: [12, 41],
+  iconAnchor: [27, 20],
 });
 
 L.Marker.prototype.options.icon = DefaultIcon;
@@ -32,6 +32,7 @@ const MapsAddress: React.FC<MapsAddressProps> = ({ data }) => {
             center={[data.latitude, data.longitude]}
             zoom={16}
             style={{ height: "400px", width: "100%" }}
+            className="z-0"
         >
             <TileLayer
                 url={

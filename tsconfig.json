@@ -15,6 +15,6 @@
 				"./src/*"
 			]
 		},
-		"types": ["leaflet"]
+		"types": ["leaflet, vite-plugin-svgr/client"]
 	}
 }

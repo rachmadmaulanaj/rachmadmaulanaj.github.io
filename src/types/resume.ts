@@ -32,6 +32,7 @@ export interface WorkExperienceAndEducation {
 export interface Skill {
     name: string;
     value: number;
+    category: string;
 }
 
 export interface Portfolio {

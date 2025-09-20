@@ -4,29 +4,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { SiPhp, SiLaravel, SiReact, SiTailwindcss, SiJavascript, SiVite } from "react-icons/si";
-import { FaCircleXmark } from "react-icons/fa6";
+import CustomIcon from "@/components/common/CustomIcon";
 
-import type { IconType } from "react-icons";
 import type { Portfolio } from "@/types/resume";
 
 interface DialogPortofolioProps {
     data: Portfolio;
 }
 
-const icons: Record<string, IconType> = {
-    "Php": SiPhp,
-    "Laravel": SiLaravel,
-    "React": SiReact,
-    "Tailwindcss": SiTailwindcss,
-    "Javascript": SiJavascript,
-    "Vite": SiVite,
-};
-
 const DialogPortofolio: React.FC<DialogPortofolioProps> = ({ data }) => {
     const [api, setApi] = React.useState<any>()
     const [current, setCurrent] = React.useState(0)
     const [count, setCount] = React.useState(0)
+    const path_image = "assets/images/portofolio/";
 
     React.useEffect(() => {
         if (!api) return
@@ -61,7 +51,7 @@ const DialogPortofolio: React.FC<DialogPortofolioProps> = ({ data }) => {
                                                 <CarouselItem key={index}>
                                                     <Card className="shadow">
                                                         <CardContent className="p-0">
-                                                            <img src={item} alt={data.name} className="w-full h-full object-cover" />
+                                                            <img src={path_image + item} alt={data.name} className="w-full h-full object-cover" />
                                                         </CardContent>
                                                     </Card>
                                                 </CarouselItem>
@@ -85,18 +75,22 @@ const DialogPortofolio: React.FC<DialogPortofolioProps> = ({ data }) => {
                                     <div className="col-span-4 md:col-span-3 break-words">{data.description}</div>
                                     <div className="col-span-4 md:col-span-1 font-bold">Link :</div>
                                     <div className="col-span-4 md:col-span-3">
-                                        <a href={data.link} className="text-blue-500 hover:underline break-words" target="_blank">{data.link}</a>
+                                        {
+                                            data.link ? (
+                                                <a href={data.link} className="text-blue-500 hover:underline break-words" target="_blank">{data.link}</a>
+                                            ) : (
+                                                <span className="text-red-400">Not Available</span>
+                                            )
+                                        }
                                     </div>
                                     <div className="col-span-4 font-bold">Stack :</div>
                                 </div>
                                 <div className="flex flex-row gap-5">
                                     {
                                         data.stack.map((item, index) => {
-                                            const Icon = icons[item] ?? FaCircleXmark;
-
                                             return (
                                                 <div key={index} className="my-3 w-7 h-7">
-                                                    <Icon className="text-orange-300 w-full h-full" />
+                                                    <CustomIcon name={item} className="text-orange-300 w-full h-full" />
                                                 </div>
                                             )
                                         })

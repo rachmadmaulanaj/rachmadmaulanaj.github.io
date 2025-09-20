@@ -11,20 +11,21 @@ type HomeProps = { data: ResumeData };
 
 const Home: React.FC<HomeProps> = ({ data }) => {
     const full_name = data.personal_info.full_name;
-    const intro = data.title.flatMap((value) => [`I'm ${full_name}, A ${value}`, 1000]);
+    const intro = data.title.flatMap((value) => [`A ${value}`, 1000]);
     
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 h-full xl:h-[calc(100vh-160px)]">
-            <div className="col-span-1 order-2 md:order-1">
-                <div className="flex flex-col items-center justify-center w-full h-full">
+        <div className="grid grid-cols-1 md:grid-cols-5 h-full xl:h-[calc(100vh-160px)]">
+            <div className="col-span-3 order-2 md:order-1 my-3">
+                <div className="flex flex-col justify-center w-full h-full">
+                    <h1 className="text-xl md:text-4xl font-bold">Hi, I'm {full_name}.</h1>
                     <TypeAnimation
                         sequence={intro}
                         wrapper="span"
                         speed={50}
                         repeat={Infinity}
-                        className="text-4xl font-bold leading-14"
+                        className="text-xl md:text-4xl font-bold mt-0 md:mt-3"
                     />
-                    <div className="flex justify-center w-full mt-5 gap-5">
+                    <div className="flex justify-center w-full mt-5 gap-2 md:gap-5">
                         <Button size="lg">
                             <Link to="/aboutme">
                                 About Me </Link>
@@ -38,7 +39,7 @@ const Home: React.FC<HomeProps> = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 order-1 md:order-2 mx-auto">
+            <div className="col-span-2 order-1 md:order-2 mx-auto my-3">
                 <img src="assets/images/personal/half-body.png" alt="half-body" className="h-full w-auto object-contain" />
             </div>
         </div>

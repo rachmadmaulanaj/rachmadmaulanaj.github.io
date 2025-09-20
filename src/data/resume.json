@@ -2,7 +2,7 @@
     "personal_info": {
         "short_name": "Rachmad",
         "full_name": "Rachmad Maulana Julianto",
-        "email": "rachmadmaulanaaa@gmailcom",
+        "email": "rachmadmaulanaaa@gmail.com",
         "phone": "+62 851 5756 1788",
         "birth_date": "1996-07-27",
         "address": "Jl. Simowau Indah Blok G No. 6 Sepanjang, Sidoarjo, Jawa Timur, Indonesia",
@@ -102,20 +102,69 @@
     ],
     "skills": [
         {
-            "name": "HTML",
-            "value": 80
-        },
-        {
-            "name": "CSS",
-            "value": 90
-        },
-        {
             "name": "Php",
-            "value": 75
+            "value": 80,
+            "category": "languages"
         },
         {
             "name": "Javascript",
-            "value": 95
+            "value": 80,
+            "category": "languages"
+        },
+        {
+            "name": "Typescript",
+            "value": 60,
+            "category": "languages"
+        },
+        {
+            "name": "Laravel",
+            "value": 70,
+            "category": "frameworks"
+        },
+        {
+            "name": "CodeIgniter",
+            "value": 80,
+            "category": "frameworks"
+        },
+        {
+            "name": "React JS",
+            "value": 80,
+            "category": "frameworks"
+        },
+        {
+            "name": "Bootstrap",
+            "value": 80,
+            "category": "frameworks"
+        },
+        {
+            "name": "Tailwind CSS",
+            "value": 80,
+            "category": "frameworks"
+        },
+        {
+            "name": "MySQL",
+            "value": 70,
+            "category": "databases"
+        },
+        {
+            "name": "SQL Server",
+            "value": 70,
+            "category": "databases"
+        },
+        {
+            "name": "Firestore",
+            "value": 70,
+            "category": "databases"
+        },
+        {
+            "name": "Git & Github",
+            "value": 70,
+            "category": "tools"
+        },
+        {
+            "name": "VS Code",
+            "value": 70,
+            "category": "tools"
         }
     ],
     "portofolio": [
@@ -124,18 +173,19 @@
             "description": "Aplikasi pencarian film internasional",
             "category": "frontend",
             "stack": [
-                "Php",
+                "Javascript",
                 "React",
-                "Javascript"
+                "Vite",
+                "Bootstrap"
             ],
             "link": "https://rachmadmaulanaj.github.io/moviegue-app/",
-            "thumbnail": "assets/images/portofolio/moviegue.gif",
+            "thumbnail": "moviegue/thumbnail.gif",
             "screenshots": [
-                "assets/images/portofolio/moviegue1.png",
-                "assets/images/portofolio/moviegue2.png",
-                "assets/images/portofolio/moviegue3.png",
-                "assets/images/portofolio/moviegue4.png",
-                "assets/images/portofolio/moviegue5.png"
+                "moviegue/ss1.png",
+                "moviegue/ss2.png",
+                "moviegue/ss3.png",
+                "moviegue/ss4.png",
+                "moviegue/ss5.png"
             ]
         },
         {
@@ -143,34 +193,142 @@
             "description": "Aplikasi peramalan cuaca",
             "category": "frontend",
             "stack": [
-                "Tailwindcss",
-                "Vite",
                 "Javascript",
-                "Laravel",
-                "React"
+                "React",
+                "Vite",
+                "Bootstrap",
+                "Leaflet"
             ],
             "link": "https://rachmadmaulanaj.github.io/cuacasekitar-app/",
-            "thumbnail": "assets/images/portofolio/cuacasekitar.gif",
+            "thumbnail": "cuacasekitar/thumbnail.gif",
             "screenshots": [
-                "assets/images/portofolio/cuacasekitar1.png",
-                "assets/images/portofolio/cuacasekitar2.png",
-                "assets/images/portofolio/cuacasekitar3.png"
+                "cuacasekitar/ss1.png",
+                "cuacasekitar/ss2.png",
+                "cuacasekitar/ss3.png"
             ]
         },
         {
             "name": "Group Chat",
             "description": "Aplikasi chat grup realtime",
-            "category": "backend",
+            "category": "frontend",
             "stack": [
                 "Javascript",
-                "Laravel"
+                "React",
+                "Vite",
+                "Bootstrap",
+                "Firebase"
             ],
             "link": "https://rachmadmaulanaj.github.io/groupchat-app/",
-            "thumbnail": "assets/images/portofolio/groupchat.gif",
+            "thumbnail": "groupchat/thumbnail.gif",
             "screenshots": [
-                "assets/images/portofolio/groupchat1.png",
-                "assets/images/portofolio/groupchat2.png",
-                "assets/images/portofolio/groupchat3.png"
+                "groupchat/ss1.png",
+                "groupchat/ss2.png",
+                "groupchat/ss3.png"
+            ]
+        },
+        {
+            "name": "KeuanganKu",
+            "description": "Aplikasi pencatat pemasukkan dan pengeluaran keuangan",
+            "category": "frontend",
+            "stack": [
+                "Javascript",
+                "React",
+                "Vite",
+                "Bootstrap",
+                "Supabase"
+            ],
+            "link": "https://rachmadmaulanaj.github.io/keuangankuv2-app/",
+            "thumbnail": "keuanganku/thumbnail.png",
+            "screenshots": [
+                "keuanganku/ss1.png",
+                "keuanganku/ss2.png",
+                "keuanganku/ss3.png",
+                "keuanganku/ss4.png",
+                "keuanganku/ss5.png"
+            ]
+        },
+        {
+            "name": "Percetakan Printing Area",
+            "description": "Website Company Profile Percetakan",
+            "category": "backend",
+            "stack": [
+                "Php",
+                "Silverstripe",
+                "Javascript",
+                "Jquery",
+                "Bootstrap",
+                "Mysql"
+            ],
+            "link": "",
+            "thumbnail": "printingarea/thumbnail.jpg",
+            "screenshots": [
+                "printingarea/ss1.jpg",
+                "printingarea/ss2.jpg",
+                "printingarea/ss3.jpg",
+                "printingarea/ss4.jpg"
+            ]
+        },
+        {
+            "name": "S I P K",
+            "description": "Sistem Informasi Pemberian Kredit",
+            "category": "backend",
+            "stack": [
+                "Php",
+                "Codeigniter",
+                "Javascript",
+                "Jquery",
+                "Bootstrap",
+                "Mysql"
+            ],
+            "link": "",
+            "thumbnail": "sipk/thumbnail.jpg",
+            "screenshots": [
+                "sipk/ss1.jpg",
+                "sipk/ss2.jpg",
+                "sipk/ss3.jpg",
+                "sipk/ss4.jpg"
+            ]
+        },
+        {
+            "name": "DEKA",
+            "description": "Sistem Informasi Penyimpanan / Stok",
+            "category": "backend",
+            "stack": [
+                "Php",
+                "Codeigniter",
+                "Javascript",
+                "Jquery",
+                "Bootstrap",
+                "Mysql"
+            ],
+            "link": "",
+            "thumbnail": "deka/thumbnail.jpg",
+            "screenshots": [
+                "deka/ss1.jpg",
+                "deka/ss2.jpg",
+                "deka/ss3.jpg",
+                "deka/ss4.jpg"
+            ]
+        },
+        {
+            "name": "Web Profil Desa",
+            "description": "Website Profil Desa Kesugihan",
+            "category": "backend",
+            "stack": [
+                "Php",
+                "Codeigniter",
+                "Javascript",
+                "Jquery",
+                "Bootstrap",
+                "Mysql"
+            ],
+            "link": "",
+            "thumbnail": "kesugihan/thumbnail.jpg",
+            "screenshots": [
+                "kesugihan/ss1.jpg",
+                "kesugihan/ss2.jpg",
+                "kesugihan/ss3.jpg",
+                "kesugihan/ss4.jpg"
             ]
         }
     ]
